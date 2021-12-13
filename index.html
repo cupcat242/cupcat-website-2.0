@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cupcats</title>
+    <link rel="icon" href="cat3.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <link href="assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="bg-container">
+        <img src="assets/img/map-optimized.png"/>
+        <a href="https://cupcatnft.com/rarity/" target="_blank" class="rarity-container" aria-label="Cupcats Rarity">
+            <img src="assets/img/rarity.png" loading="lazy" alt="Cupcats Rarity"/>
+        </a>
+        <a href="" class="game-container" data-bs-toggle="modal" data-bs-target="#blockchain-game-modal">
+            <img src="assets/img/blockchain-game.png" loading="lazy"/>
+        </a>
+        <a href="#" class="staking-container">
+            <img src="assets/img/staking.png" loading="lazy"/>
+        </a>
+        <a href="#" class="construction-container staking-construction">
+            <img src="assets/img/underconstruction.png" loading="lazy"/>
+        </a>
+        <a href="" class="band-container" data-bs-toggle="modal" data-bs-target="#metal-modal">
+            <img src="assets/img/band.png" loading="lazy"/>
+        </a>
+        <a href="" class="store-container" data-bs-toggle="modal" data-bs-target="#shop-modal">
+            <img src="assets/img/store.png" loading="lazy"/>
+        </a>
+        <a href="#" class="mobile-game-container" data-bs-toggle="modal" data-bs-target="#mobile-game-modal">
+            <img src="assets/img/mobile.png" loading="lazy"/>
+        </a>
+        <a href="#" class="donation-container" data-bs-toggle="modal" data-bs-target="#donation-modal">
+            <img src="assets/img/donations.png" loading="lazy"/>
+        </a>
+        <a href="#" class="coin-container">
+            <img src="assets/img/coin.png" loading="lazy"/>
+        </a>
+        <a href="#" class="construction-container coin-construction">
+            <img src="assets/img/underconstruction.png" loading="lazy"/>
+        </a>
+        <a href="https://opensea.io/collection/cupcatshonorary" target="_blank" class="honoraries-container">
+            <img src="assets/img/honoraries.png" loading="lazy"/>
+        </a>
+        <a href="https://opensea.io/collection/cupcatsspecial" target="_blank" class="special-container">
+            <img src="assets/img/special.png" loading="lazy"/>
+        </a>
+        <a href="#" class="holders-container" data-bs-toggle="modal" data-bs-target="#holders-modal">
+            <img src="assets/img/holders.png" loading="lazy"/>
+        </a>
+        <a href="#" class="story-container" data-bs-toggle="modal" data-bs-target="#story-modal">
+            <img src="assets/img/story.png" loading="lazy"/>
+        </a>
+        <a href="#" class="pc-container">
+            <img src="assets/img/pc.png" loading="lazy"/>
+        </a>
+        <a href="#" class="construction-container pc-construction">
+            <img src="assets/img/underconstruction.png" loading="lazy"/>
+        </a>
+        <a href="https://opensea.io/collection/cupcatsofficial" target="_blank" class="os-container">
+            <img src="assets/img/os.png" loading="lazy"/>
+        </a>
+    </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top bg-white">
+        <div class="row">
+            <div class="col-12 col-md">
+                <div class="mx-3">
+                    <img class="mb-2" src="assets/img/logo.png" alt="Cupcat Logo" width="24" height="24">
+                    <small class="d-block mb-3 text-muted">&copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                    </small>
+                </div>
+            </div>
+            <div class="col-6 col-md">
+                <div class="mx-3">
+                    <h5>Info</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal"
+                               data-bs-target="#blockchain-game-modal">Blockchain Game</a></li>
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#metal-modal">Cath
+                            Metal Band</a></li>
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#shop-modal">Cupcat
+                            Shop</a></li>
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#mobile-game-modal">Mobile
+                            Game</a></li>
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#donation-modal">Donations</a>
+                        </li>
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal"
+                               data-bs-target="#holders-modal">Drops</a></li>
+                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#story-modal">cupkitten's
+                            Story</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Links</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="https://opensea.io/collection/cupcatsofficial" target="_blank">Official
+                        Collection</a></li>
+                    <li><a class="text-muted" href="https://cupcatnft.com/rarity/" target="_blank">Official Rarity</a>
+                    </li>
+                    <li><a class="text-muted" href="https://opensea.io/collection/cupcatshonorary" target="_blank">Honoraries</a>
+                    </li>
+                    <li><a class="text-muted" href="https://opensea.io/collection/cupcatsspecial" target="_blank">Special
+                        Edition</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <div class="mx-3">
+                    <h5>Social</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://discord.gg/cupcats" target="_blank">Discord</a></li>
+                        <li><a class="text-muted" href="https://twitter.com/cupcatnft" target="_blank">Twitter</a></li>
+                        <li><a class="text-muted" href="https://cupcats.medium.com/" target="_blank">Medium</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="modal fade" id="blockchain-game-modal" tabindex="-1" aria-labelledby="blockchain-game-title"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="blockchain-game-title">Blockchain Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We are planning to make a blockchain game, where all NFTs from Cupcats (Cupcats, Cupcat houses, and
+                    Cupcat Kittens) will be usable in game.</p>
+                <p>This game is planned to be played by EVERYONE, but only Cupcat holders will be able to play with
+                    their own Cupcats, houses, and kittens as long as they hold them. We already made a deal for this
+                    game, game will be made as centralized but will be connected to the blockchain.</p>
+                <p>By playing this game, Cupcat holders will be able to earn a gaming token, this token will have
+                    liquidity to buy & sell, Cupcat holders will be able to earn this token by playing the game, but a
+                    tax will be redacted from every sale to use for marketing purposes. Name of the token is yet to be
+                    revealed, we are still thinking about options.</p>
+                <p>More details about the gameplay will come after our meetings with our partner game company.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="metal-modal" tabindex="-1" aria-labelledby="metal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="metal-title">Cath Metal Band</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Cath Metal Band are rank #1 cats on rarity in Cupcats collection. There are 4 Cath Metal Band
+                    members:
+                <ul>
+                    <li>Vocalist</li>
+                    <li>Bass Guitarist</li>
+                    <li>Electro Guitarist</li>
+                    <li>Drummer</li>
+                </ul>
+                </p>
+                <p>cupkitten drew Cath Metal Band with a purpose: A real rock/metal band with a song, and maybe an
+                    album.</p>
+                <p>Right now we are working on our first song for Cath Metal Band. Our producer friend is helping us to
+                    realize our dream, and if we cannot find what we are looking for, we will get more help from other
+                    professionals.</p>
+                <p>Every song made by Cath Metal Band will be a rock or metal song. We are also looking for other ways
+                    of utilizing the band. This is being made to show Cupcats to a whole new community.</p>
+                <p>If you have any suggestions about Cath Metal Band songs or utility, you can reach out to us from
+                    here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="shop-modal" tabindex="-1" aria-labelledby="shop-title"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shop-title">Cupcat Shop</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>As our community already knows, we are working for a shop that’s not only limited to Cupcat
+                    products.</p>
+                <p>Building a shop was the first big thing on our roadmap. Many people from our community didn’t agree
+                    with us, some left, some didn’t think physical products would be a success. Many of these thoughts
+                    are mostly because we couldn’t deliver the message well, so here are some details:
+                </p>
+                <p>We are not looking to create a shop for Cupcat owners. Our target is creating products for every cat
+                    lover, with and without Cupcat designs. We are aiming to create a product line in many different
+                    areas:
+                <ul>
+                    <li>Streetwear (T-shirts, sweatshirts, jackets etc.)</li>
+                    <li>Home apparel (Pyjamas, bathrobes etc.)</li>
+                    <li>Accessories (Hats, backpacks, patches etc.)</li>
+                    <li>Plushies and pins</li>
+                    <li>Mugs</li>
+                    <li>Collectibles</li>
+                    <li>...and many more that we will announce on a later date.</li>
+                </ul>
+                </p>
+                <p>All of the designs will be about cats, and every Cupcat holder will have a lifetime discount on the
+                    shop.</p>
+                <p>We are also working to make a cryptocurrency pay option. This may or may not become true, so no
+                    promises but if we can make this, we will build our shop on multiple chains to provide a better
+                    shopping experience.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="story-modal" tabindex="-1" aria-labelledby="story-title"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="story-title">cupkitten's Story</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Hello everyone, I’m cupkitten. The creator of the Cupcats and the artist at the same time.</p>
+                <p>I’m from a developing country. People not living here might think this is a good place to live, a
+                    good holiday destination, but in reality I live in a place where women live in fear everyday.</p>
+                <p>We wake up to murders, missing women news, abuses and many more stories every day, women normally
+                    have rights on paper in my country, but we actually don’t in life. People who kill women mostly
+                    don't get sentenced, abuses are never punished, underage marriages are everywhere. I’m not from a
+                    place where hijab or burqa is a must, but women who are not wearing it are being judged in many
+                    places, and men think not wearing these is an invitation to abuse.</p>
+                <p>I live with my boyfriend (husband to be, his nickname is catfish) and we have 4 cats living with us,
+                    and we also pay expenses for 2 cats in my family home where I used to live. I also always help stray
+                    cats in our streets. I live in a place we can call a “cat neighborhood” and there are hundreds of
+                    cats here. I’m doing my best to feed them. My boyfriend didn’t have a bad life, he wasn’t rich but
+                    he also wasn’t poor, I learned many things while watching him sitting next to me and researching
+                    crypto everyday. He was trying to earn money with his investments so we can get rid of this country
+                    and live abroad.</p>
+                <p>Things went bad, he lost a lot of money because he tried things he didn’t know, and I know this is a
+                    classic in crypto. But we didn’t give up on our dreams, and that’s where I thought maybe I could try
+                    making an NFT to change our situation. He supported me when I moved in with him, bought my first
+                    graphic tablet. Even though I could work as a nurse, the profession I have a degree from college, he
+                    wanted me to follow my passion, and pushed me to become better at something I never found support
+                    for.</p>
+                <p>I wanted to leave this country, I wanted to save my life, I wanted to save my cats’ and boyfriend’s
+                    life. He knew about NFTs and helped me to find the correct way to do it. We asked help from 3 of our
+                    friends, unevenpun (developer), Lasalien (Discord builder), and oranJ (video editor), and started a
+                    journey where we don’t even know if we can make it happen or not.</p>
+                <p>I was drawing, trying to get noticed on Twitter, my boyfriend was trying to use our NFT account and
+                    we were trying to at least get some money to help us. This is not a lie, we needed money and that’s
+                    why I started to make Cupcats. I was already following some people in my real Twitter account
+                    because of my boyfriend, and wanted to make some honoraries for them, both because I love them and
+                    also I didn’t know what else we could do, I thought maybe they could at least help us with some
+                    knowledge because they all looked like great people.</p>
+                <p>I messaged many people, asking for help about understanding what I should do, only CL returned my
+                    messages back then. Then I made my first honorary for CL, that was the biggest interaction I ever
+                    got, I got hopeful, finished icebergy, and he didn’t even see the honorary I made for him and I got
+                    upset. Trying everyday, replying to many tweets hoping to get some to notice me, drawing at the same
+                    time, and my boyfriend wasn’t able to help a lot because he was also working so we could live, I got
+                    depressed, and an angry reply under Andre Cronje’s tweet turned into something I could never dream
+                    of. Andre Cronje retweeted and tweeted about me and Cupcats many times in an hour, people started to
+                    rush into our Discord, a lot of people started to follow me and the Cupcats, I was in shock and
+                    didn’t even know what to do. We hugged and started crying with my boyfriend, we were looking into
+                    our phones, notifications kept coming, it was a dream moment that couldn’t be real or couldn’t be
+                    any better.</p>
+                <p>And then almost every crypto influencer noticed me, many of them offered help, a lot of people
+                    messaged me and offered help, I couldn’t return to everyone because there were hundreds of messages.
+                    I still remember that day and I’m still grateful to Andre Cronje and everyone offered help. Without
+                    you, I wouldn’t be able to believe in myself and be able to think I could do something people would
+                    like.</p>
+                <p>Now with the community’s help, we were able to launch Cupcats, I got incredible support from many
+                    people, especially from Tetranode and many more other known people in crypto. I want to thank all of
+                    them from here, all of them have an honorary and if I missed anyone, please reach me out.</p>
+                <p>Thanks to everyone who supported Cupcats and me, people really saved my life and now I want to give
+                    back great things in return. That’s why my boyfriend and me are working everyday to make Cupcats
+                    bigger, and I hope we can make it so this doesn’t only stay as people helping because of my
+                    story.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="donation-modal" tabindex="-1" aria-labelledby="donation-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donation-title">Donations</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>As mentioned in our roadmap, we are donating 5% of all the income from Cupcats.</p>
+                <p>While starting this project, cupkitten’s main purpose was to leave the country she lives with her
+                    cats and give a good life to both herself and her cats, and it’s not limited with that. We want to
+                    save as many stray animals as we can.</p>
+                <p>We actually wanted to create a cat shelter with our money, but that wasn’t possible with the amount
+                    we can spare. We are still aiming to build a cat or animal shelter if we earn anything from the 2nd
+                    project but that’s a future aim.</p>
+                <p>
+                    For now, we are donating in simple amounts, and we want to help as many tiny places as we can to
+                    make a difference for stray cats. Here are the places we donated till now.
+                <ul>
+                    <li>Place 1</li>
+                    <li>Place 2</li>
+                    <li>Place 3</li>
+                    <li>etc</li>
+                </ul>
+                </p>
+                <p>If you have a suggestion, please join our <a href="https://discord.gg/cupcats" target="_blank">Discord</a>
+                    and and tell us in #donation-suggestion channel.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="holders-modal" tabindex="-1" aria-labelledby="holders-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="holders-title">Drops for Cupcat Holders</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Cupcat holders will enjoy 2 different free claim/airdrop NFTs connected to Cupcats.</p>
+                <p>We are preparing Cupcat houses with Algerian illustrator Ismail Tiffour, and kittens with Turkish
+                    illustrator Yaren Kurt.</p>
+                <h5>Drop 1: Houses for Cupcats</h5>
+                <p>Houses will consist of a lot of things. A theme, a window for cats to look outside, food bowls, cat
+                    trees, litter boxes and some other things. This house will also be your home in the Cupcat
+                    blockchain game. You will be able to fully interact with everything in your house.</p>
+                <p>Our artist for Cupcat houses is Algerian artist Ismail Tiffour. He is known for his incredible
+                    landscape illustrations, and he will work with us to create great homes for Cupcats.</p>
+                <h5>Drop 2: Kittens</h5>
+                <p>Houses won’t be only for Cupcats, all Cupcat owners will also own a kitten. Kittens will have
+                    different traits just like Cupcats, they will not have a cup but they will have a bed (or something
+                    like a bed) to sit on.</p>
+                <p>Sweet kittens will be drawn by Turkish female artist Yaren Kurt. She is a young artist still studying
+                    in college, and her expertise is drawing things in a cute way. A perfect match for Cupcats!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mobile-game-modal" tabindex="-1" aria-labelledby="mobile-game-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mobile-game-title">Mobile Game</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We are creating a mobile game for Cupcats in collaboration with Stratera Games from Turkey.</p>
+                <p>Stratera Games is founded by Turkish influencer Dora Özsoy. Dora is known with his narrative and
+                    story videos about League of Legends, he’s great at finding easter eggs and other secret things, and
+                    creating a narrative around it or finding what those secrets are pointing out.</p>
+                <p>Stratera Games is an indie game studio, already launched 5 games and some of them gained a good
+                    traction among Turkish players.</p>
+                <p>Our mobile game will be their first huge project, equipped with a lot of details. Game will be
+                    launched as a single player game with a worldwide leaderboard but we are planning to implement
+                    multiplayer in the future.</p>
+                <p>To get more information about our sugary Cupcat mobile game, you can check our
+                    <a href="https://cupcats.medium.com/cupcats-x-stratera-games-mobile-cupcats-game-f6b5338434a1"
+                       target="_blank">Medium post.</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blame 242 for all this code -->
+</body>
+</html>

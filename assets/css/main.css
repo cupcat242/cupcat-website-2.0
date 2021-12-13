@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    background-color: #F3BDFF;
+    background-image: url("/assets/img/BG2.png");
+    background-repeat: space;
+    overflow-x: hidden;
+}
+
+.bg-container {
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-container img {
+    width: 100%;
+}
+
+.bg-container a {
+    display: block;
+    position: absolute;
+}
+
+.rarity-container {
+    top: 23%;
+    left: 6%;
+    width: 20%;
+}
+
+.game-container {
+    top: 25%;
+    left: 38%;
+    width: 22%;
+}
+
+.staking-container {
+    top: 18%;
+    right: 1.5%;
+    width: 22%;
+}
+
+.staking-construction {
+    top: 20%;
+    right: 13.5%;
+}
+
+.band-container {
+    top: 35%;
+    left: -1%;
+    width: 29%;
+}
+
+.store-container {
+    top: 36.5%;
+    left: 26.5%;
+    width: 31%;
+}
+
+.mobile-game-container {
+    top: 36.5%;
+    right: -3%;
+    width: 31%;
+}
+
+.donation-container {
+    top: 55%;
+    left: 1%;
+    width: 25%;
+}
+
+.coin-container {
+    top: 57.5%;
+    left: 30%;
+    width: 20%;
+}
+
+.coin-construction {
+    top: 60%;
+    left: 30%;
+}
+
+.honoraries-container {
+    top: 52%;
+    left: 49%;
+    width: 35%;
+}
+
+.special-container {
+    top: 79%;
+    left: 1%;
+    width: 26%;
+}
+
+.holders-container {
+    top: 89%;
+    left: 30%;
+    width: 15%;
+}
+
+.story-container {
+    top: 76%;
+    left: 50%;
+    width: 33%;
+}
+
+.pc-container {
+    top: 63%;
+    right: -5%;
+    width: 31%;
+}
+
+.pc-construction {
+    top: 68%;
+    right: 12%;
+}
+.os-container {
+    top: 87%;
+    right: 5%;
+    width: 25%;
+}
+
+.construction-container {
+    content: url("/assets/img/underconstruction.png");
+    width: 10%;
+}

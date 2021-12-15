@@ -6,6 +6,60 @@ body {
     overflow-x: hidden;
 }
 
+.hamburger-menu {
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+}
+
+.hamburger-menu svg {
+    stroke: #FF699E;
+    fill: #FF699E;
+}
+
+.hamburger-menu .btn-primary:focus {
+    border-bottom-color: white;
+    background-color: white;
+}
+
+.offcanvas {
+    background-color: #FF699E;
+}
+
+.offcanvas-header {
+    justify-content: end;
+    padding: 0px;
+    padding-right: 1rem;
+}
+
+.offcanvas-header .btn-close {
+    background: none;
+    opacity: 1;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.offcanvas-body li {
+    text-align: center;
+    padding: 5% 0px;
+}
+
+.offcanvas-body li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container-fluid.page-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100vw;
+}
+
 .bg-container {
     margin: 0px auto;
     position: relative;
@@ -21,6 +75,23 @@ body {
     position: absolute;
 }
 
+.bg-container a img.sign {
+    opacity: 0;
+    position: absolute;
+    width:60%;
+    right: -30%;
+    bottom: 0;
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -o-transition: opacity .25s ease-in;
+    -ms-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;
+}
+
+.bg-container a:hover img.sign {
+    opacity: 1;
+}
+
 .rarity-container {
     top: 23%;
     left: 6%;
@@ -33,10 +104,18 @@ body {
     width: 22%;
 }
 
+.bg-container a.game-container img.sign {
+    right: -40%;
+}
+
 .staking-container {
     top: 18%;
     right: 1.5%;
     width: 22%;
+}
+
+.bg-container a.staking-container img.sign {
+    right: 70%;
 }
 
 .staking-construction {
@@ -50,10 +129,22 @@ body {
     width: 29%;
 }
 
+.bg-container a.band-container img.sign {
+    width: 50%;
+    right: 50%;
+    top: 60%;
+}
+
 .store-container {
     top: 36.5%;
     left: 26.5%;
     width: 31%;
+}
+
+.bg-container a.store-container img.sign {
+    width: 45%;
+    right: -13%;
+    top: -5%;
 }
 
 .mobile-game-container {
@@ -62,16 +153,34 @@ body {
     width: 31%;
 }
 
+.bg-container a.mobile-game-container img.sign {
+    width: 42%;
+    right: 55%;
+    top: -18%;
+}
+
 .donation-container {
     top: 55%;
     left: 1%;
     width: 25%;
 }
 
+.bg-container a.donation-container img.sign {
+    width: 50%;
+    right: 0%;
+    top: 15%;
+}
+
 .coin-container {
     top: 57.5%;
     left: 30%;
     width: 20%;
+}
+
+.bg-container a.coin-container img.sign {
+    right: -10%;
+    top: -35%;
+    width: 60%;
 }
 
 .coin-construction {
@@ -85,10 +194,21 @@ body {
     width: 35%;
 }
 
+.bg-container a.honoraries-container img.sign {
+    width: 40%;
+    right: 0%;
+    top: 0%;
+}
+
 .special-container {
     top: 79%;
     left: 1%;
     width: 26%;
+}
+
+.bg-container a.special-container img.sign {
+    right: 50%;
+    top: 75%;
 }
 
 .holders-container {
@@ -97,10 +217,20 @@ body {
     width: 15%;
 }
 
+.bg-container a.holders-container img.sign {
+    width:110%;
+    right: -62%;
+    top: -59%;
+}
+
 .story-container {
     top: 76%;
-    left: 50%;
-    width: 33%;
+    left: 53%;
+    width: 25%;
+}
+
+.bg-container a.story-container img.sign {
+    bottom: -5%;
 }
 
 .pc-container {
@@ -109,17 +239,73 @@ body {
     width: 31%;
 }
 
+.bg-container a.pc-container img.sign {
+    right: 68%;
+    width: 40%;
+    bottom: 35%;
+}
+
 .pc-construction {
     top: 68%;
     right: 12%;
 }
+
 .os-container {
     top: 87%;
     right: 5%;
     width: 25%;
 }
 
+.bg-container a.os-container img.sign {
+    right: -10%;
+    width: 55%;
+}
+
 .construction-container {
     content: url("/assets/img/underconstruction.png");
     width: 10%;
+}
+
+.modal-content {
+    background-color: #FF699E;
+    color: white;
+}
+
+.modal-header .row {
+    text-align: center;
+    background-color: white;
+    color: #FF699E;
+}
+
+.modal-header .title-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header img {
+    vertical-align: center;
+    max-width: 100%;
+}
+
+.modal-body a {
+    color: white;
+}
+
+.btn-primary {
+    color: #FF699E;
+    background-color: white;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    color: #FF699E;
+    background-color: white;
+    border-color: white;
+}
+
+@media (hover: none) {
+    .bg-container a img.sign {
+        opacity: 1;
+    }
 }

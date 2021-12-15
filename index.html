@@ -15,126 +15,123 @@
     <link href="assets/css/main.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="container">
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="menu">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-unstyled text-small">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#blockchain-game-modal">Blockchain Game</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#metal-modal">Cath Metal Band</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#shop-modal">Physical Store</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#mobile-game-modal">Mobile Game</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#donation-modal">Donations</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#holders-modal">Drops For Holders</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#story-modal">cupkitten's Story</a></li>
+            <li><a href="https://opensea.io/collection/cupcatsofficial" target="_blank">Official Collection</a></li>
+            <li><a href="https://cupcatnft.com/rarity/" target="_blank">Official Rarity</a></li>
+            <li><a href="https://opensea.io/collection/cupcatshonorary" target="_blank">Honoraries</a></li>
+            <li><a href="https://opensea.io/collection/cupcatsspecial" target="_blank">Special Editions</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container-fluid page-container">
+    <div class="hamburger-menu">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#menu" role="button" aria-controls="menu">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </a>
+    </div>
     <div class="bg-container">
         <img src="assets/img/map-optimized.png"/>
         <a href="https://cupcatnft.com/rarity/" target="_blank" class="rarity-container" aria-label="Cupcats Rarity">
             <img src="assets/img/rarity.png" loading="lazy" alt="Cupcats Rarity"/>
+            <img class="sign" src="assets/img/12.png" loading="lazy" alt="Cupcats Rarity"/>
         </a>
         <a href="" class="game-container" data-bs-toggle="modal" data-bs-target="#blockchain-game-modal">
             <img src="assets/img/blockchain-game.png" loading="lazy"/>
+            <img class="sign" src="assets/img/5.png" loading="lazy" />
         </a>
         <a href="#" class="staking-container">
             <img src="assets/img/staking.png" loading="lazy"/>
+            <img class="sign" src="assets/img/8.png" loading="lazy" />
         </a>
         <a href="#" class="construction-container staking-construction">
             <img src="assets/img/underconstruction.png" loading="lazy"/>
         </a>
         <a href="" class="band-container" data-bs-toggle="modal" data-bs-target="#metal-modal">
             <img src="assets/img/band.png" loading="lazy"/>
+            <img class="sign" src="assets/img/11.png" loading="lazy" />
         </a>
         <a href="" class="store-container" data-bs-toggle="modal" data-bs-target="#shop-modal">
             <img src="assets/img/store.png" loading="lazy"/>
+            <img class="sign" src="assets/img/1.png" loading="lazy" />
         </a>
         <a href="#" class="mobile-game-container" data-bs-toggle="modal" data-bs-target="#mobile-game-modal">
             <img src="assets/img/mobile.png" loading="lazy"/>
+            <img class="sign" src="assets/img/5.png" loading="lazy" />
         </a>
         <a href="#" class="donation-container" data-bs-toggle="modal" data-bs-target="#donation-modal">
             <img src="assets/img/donations.png" loading="lazy"/>
+            <img class="sign" src="assets/img/6.png" loading="lazy" />
         </a>
         <a href="#" class="coin-container">
             <img src="assets/img/coin.png" loading="lazy"/>
+            <img class="sign" src="assets/img/7.png" loading="lazy" />
         </a>
         <a href="#" class="construction-container coin-construction">
             <img src="assets/img/underconstruction.png" loading="lazy"/>
         </a>
         <a href="https://opensea.io/collection/cupcatshonorary" target="_blank" class="honoraries-container">
             <img src="assets/img/honoraries.png" loading="lazy"/>
+            <img class="sign" src="assets/img/9.png" loading="lazy" />
         </a>
         <a href="https://opensea.io/collection/cupcatsspecial" target="_blank" class="special-container">
             <img src="assets/img/special.png" loading="lazy"/>
+            <img class="sign" src="assets/img/10.png" loading="lazy" />
         </a>
         <a href="#" class="holders-container" data-bs-toggle="modal" data-bs-target="#holders-modal">
             <img src="assets/img/holders.png" loading="lazy"/>
+            <img class="sign" src="assets/img/4.png" loading="lazy" />
         </a>
         <a href="#" class="story-container" data-bs-toggle="modal" data-bs-target="#story-modal">
             <img src="assets/img/story.png" loading="lazy"/>
+            <img class="sign" src="assets/img/14.png" loading="lazy" />
         </a>
         <a href="#" class="pc-container">
             <img src="assets/img/pc.png" loading="lazy"/>
+            <img class="sign" src="assets/img/3.png" loading="lazy" />
         </a>
         <a href="#" class="construction-container pc-construction">
             <img src="assets/img/underconstruction.png" loading="lazy"/>
         </a>
         <a href="https://opensea.io/collection/cupcatsofficial" target="_blank" class="os-container">
             <img src="assets/img/os.png" loading="lazy"/>
+            <img class="sign" src="assets/img/13.png" loading="lazy" />
         </a>
     </div>
-    <footer class="pt-4 my-md-5 pt-md-5 border-top bg-white">
-        <div class="row">
-            <div class="col-12 col-md">
-                <div class="mx-3">
-                    <img class="mb-2" src="assets/img/logo.png" alt="Cupcat Logo" width="24" height="24">
-                    <small class="d-block mb-3 text-muted">&copy;
-                        <script>document.write(new Date().getFullYear())</script>
-                    </small>
-                </div>
-            </div>
-            <div class="col-6 col-md">
-                <div class="mx-3">
-                    <h5>Info</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal"
-                               data-bs-target="#blockchain-game-modal">Blockchain Game</a></li>
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#metal-modal">Cath
-                            Metal Band</a></li>
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#shop-modal">Cupcat
-                            Shop</a></li>
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#mobile-game-modal">Mobile
-                            Game</a></li>
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#donation-modal">Donations</a>
-                        </li>
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal"
-                               data-bs-target="#holders-modal">Drops</a></li>
-                        <li><a class="text-muted" href="#" data-bs-toggle="modal" data-bs-target="#story-modal">cupkitten's
-                            Story</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Links</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="https://opensea.io/collection/cupcatsofficial" target="_blank">Official
-                        Collection</a></li>
-                    <li><a class="text-muted" href="https://cupcatnft.com/rarity/" target="_blank">Official Rarity</a>
-                    </li>
-                    <li><a class="text-muted" href="https://opensea.io/collection/cupcatshonorary" target="_blank">Honoraries</a>
-                    </li>
-                    <li><a class="text-muted" href="https://opensea.io/collection/cupcatsspecial" target="_blank">Special
-                        Edition</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <div class="mx-3">
-                    <h5>Social</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="https://discord.gg/cupcats" target="_blank">Discord</a></li>
-                        <li><a class="text-muted" href="https://twitter.com/cupcatnft" target="_blank">Twitter</a></li>
-                        <li><a class="text-muted" href="https://cupcats.medium.com/" target="_blank">Medium</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 
 <div class="modal fade" id="blockchain-game-modal" tabindex="-1" aria-labelledby="blockchain-game-title"
      aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="blockchain-game-title">Blockchain Game</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex"><img src="assets/img/blockchain-game.png" loading="lazy"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="blockchain-game-title">
+                            Blockchain Game</h1></div>
+                        <div class="col-3 d-none d-md-flex"><img src="assets/img/blockchain-game.png" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>We are planning to make a blockchain game, where all NFTs from Cupcats (Cupcats, Cupcat houses, and
@@ -156,11 +153,17 @@
 </div>
 
 <div class="modal fade" id="metal-modal" tabindex="-1" aria-labelledby="metal-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="metal-title">Cath Metal Band</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex"><img src="assets/img/band.png" loading="lazy"/></div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="metal-title">Cath Metal
+                            Band</h1></div>
+                        <div class="col-3 d-none d-md-flex"><img src="assets/img/band.png" loading="lazy"/></div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>Cath Metal Band are rank #1 cats on rarity in Cupcats collection. There are 4 Cath Metal Band
@@ -191,11 +194,17 @@
 
 <div class="modal fade" id="shop-modal" tabindex="-1" aria-labelledby="shop-title"
      aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="shop-title">Cupcat Shop</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex"><img src="assets/img/store.png" loading="lazy"/></div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="shop-title">Physical Store</h1>
+                        </div>
+                        <div class="col-3 d-none d-md-flex"><img src="assets/img/store.png" loading="lazy"/></div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>As our community already knows, we are working for a shop that’s not only limited to Cupcat
@@ -232,11 +241,17 @@
 
 <div class="modal fade" id="story-modal" tabindex="-1" aria-labelledby="story-title"
      aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="story-title">cupkitten's Story</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex py-2"><img src="assets/img/story.png" loading="lazy"/></div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="story-title">cupkitten's
+                            Story</h1></div>
+                        <div class="col-3 d-none d-md-flex py-2"><img src="assets/img/story.png" loading="lazy"/></div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>Hello everyone, I’m cupkitten. The creator of the Cupcats and the artist at the same time.</p>
@@ -302,11 +317,19 @@
 </div>
 
 <div class="modal fade" id="donation-modal" tabindex="-1" aria-labelledby="donation-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="donation-title">Donations</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex p-2"><img src="assets/img/donations.png" loading="lazy"/>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="donation-title">Donations</h1>
+                        </div>
+                        <div class="col-3 d-none d-md-flex p-2"><img src="assets/img/donations.png" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>As mentioned in our roadmap, we are donating 5% of all the income from Cupcats.</p>
@@ -337,11 +360,16 @@
 </div>
 
 <div class="modal fade" id="holders-modal" tabindex="-1" aria-labelledby="holders-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="holders-title">Drops for Cupcat Holders</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex p-2"><img src="assets/img/holders.png" loading="lazy"/></div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="holders-title">Drops for Holders</h1></div>
+                        <div class="col-3 d-none d-md-flex p-2"><img src="assets/img/holders.png" loading="lazy"/></div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>Cupcat holders will enjoy 2 different free claim/airdrop NFTs connected to Cupcats.</p>
@@ -368,11 +396,17 @@
 </div>
 
 <div class="modal fade" id="mobile-game-modal" tabindex="-1" aria-labelledby="mobile-game-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="mobile-game-title">Mobile Game</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="container-fluid">
+                    <div class="row title-container">
+                        <div class="col-3 d-none d-md-flex p-2"><img src="assets/img/mobile.png" loading="lazy"/></div>
+                        <div class="col-12 col-md-6 d-flex"><h1 class="modal-title" id="mobile-game-title">Mobile
+                            Game</h1></div>
+                        <div class="col-3 d-none d-md-flex p-2"><img src="assets/img/mobile.png" loading="lazy"/></div>
+                    </div>
+                </div>
             </div>
             <div class="modal-body">
                 <p>We are creating a mobile game for Cupcats in collaboration with Stratera Games from Turkey.</p>
